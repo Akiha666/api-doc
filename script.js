@@ -1,8 +1,10 @@
-console.log('CN'+1);
+function insertHTML(selector, html) {
+    var element = document.querySelector(selector);
+    if (element) {
+        element.insertAdjacentHTML('afterend', html);
+    } else {
+        console.error('找不到指定的 DOM 元素：', selector);
+    }
+}
 
-console.log('CN'+1);
-
-console.log('CN'+1);
-
-console.log('CN'+1);
-
+insertHTML('body', '<p>Hello, World!</p>');

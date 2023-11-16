@@ -6,5 +6,3 @@ function insertHTML(selector, html) {
         console.error('找不到指定的 DOM 元素：', selector);
     }
 }
-
-insertHTML('body', '<p>Hello, World!</p>');
